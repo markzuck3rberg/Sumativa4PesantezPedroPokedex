@@ -1,0 +1,7 @@
+{
+  "name": "APIRESTapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

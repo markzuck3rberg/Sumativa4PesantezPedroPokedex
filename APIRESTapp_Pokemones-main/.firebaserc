@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pokeappi-leds": {
+      "hosting": {
+        "app": [
+          "pokeappi-leds"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pokeappi-leds"
+  }
+}

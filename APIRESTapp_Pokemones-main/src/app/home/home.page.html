@@ -1,0 +1,27 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+<!-- home.page.html -->
+<ion-content fullscreen="true" class="background">
+  <div class="pokeApi">
+    <ion-card [ngClass]="getPokemonTypeClass()" id="cardPoke">
+      <ion-card-content>
+        <ion-card class="cardPoke2" id="cardPoke2">
+          <ion-card-header>
+            <h2><ion-input [(ngModel)]="name2" placeholder="Nombre del Pokémon" class="pixelify-sans-uniquifier"></ion-input></h2>
+            <button (click)="getPokemonData2(name2)" class="pixelify-sans-uniquifier"><b>Buscar</b></button>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label class="pixelify-sans-uniquifier"><h1>{{pokemon2.types[0]?.type['name']}}</h1></ion-label>
+            <ion-img [src]="pokemon2.sprites.front_default" class="imagenPoke"></ion-img>
+          </ion-card-content>
+        </ion-card>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+
+
+
